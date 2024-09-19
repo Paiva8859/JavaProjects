@@ -27,7 +27,7 @@ public class SistemaAprovacao {
             }
         }
         if (todasNotasAcimaDeNove) {
-            media *= 1.10; // Aplica o bônus de 10%
+            media *= 1.10;
         }
     }
 
