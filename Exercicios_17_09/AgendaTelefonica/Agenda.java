@@ -3,7 +3,7 @@ package AgendaTelefonica;
 public class Agenda {
     private Contato[] contatos;
     private int quantidadeContatos;
-    private static final int MAX_CONTATOS = 100;
+    private static final int MAX_CONTATOS = 5;
 
     public Agenda() {
         contatos = new Contato[MAX_CONTATOS];
@@ -25,7 +25,7 @@ public class Agenda {
         for (int i = index; i < quantidadeContatos - 1; i++) {
             contatos[i] = contatos[i + 1];
         }
-        contatos[--quantidadeContatos] = null; // Limpa o último contato
+        contatos[--quantidadeContatos] = null;
     }
 
     public Contato buscarContato(String nome) throws ContatoNaoEncontradoException {
@@ -55,4 +55,3 @@ public class Agenda {
         return -1;
     }
 }
-
