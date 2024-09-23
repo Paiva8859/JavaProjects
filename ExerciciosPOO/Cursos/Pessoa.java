@@ -5,8 +5,8 @@ public class Pessoa {
     String nome, cpf;
 
     // Métodos
-    void exibirInformacoes(String nome, String cpf) {
-        System.out.println("Nome: " + nome + ", cpf: " + cpf);
+    public String exibirInformacoes() {
+        return "Nome:"+nome+", CPF: "+cpf;
     }
 
     //Getters and setters
@@ -20,6 +20,12 @@ public class Pessoa {
         return cpf;
     }
     public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    // Construtor
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
         this.cpf = cpf;
     }
 }
